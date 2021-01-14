@@ -4,7 +4,7 @@ RUN mkdir /helperbot
 WORKDIR /helperbot
 COPY Gemfile /helperbot/Gemfile
 COPY Gemfile.lock /helperbot/Gemfile.lock
-RUN gem install bundler
+RUN gem install rails bundler
 RUN bundle check || bundle install
 COPY . /helperbot
 
