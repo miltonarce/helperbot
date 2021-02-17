@@ -11,7 +11,8 @@ class Issue < ApplicationRecord
 
   def self.to_slack(res_json)
     # Token
-    token = "Bearer xoxp-1606047993505-1599581198804-1593966530883-5b098d6ef3a5008f536ee93fdb2318c1"
+    token = "Bearer xoxp-1606047993505-1599581198804-1733396579509-4a33a64c69e407b3876f15ea4f2f9bf8"
+    
      message = ""
   
     res_json.each {|n| 
