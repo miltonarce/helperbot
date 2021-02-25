@@ -1,3 +1,6 @@
+require 'net/http'
+require 'net/https'
+
 class Issue < ApplicationRecord
   def self.from_github
     url = URI.parse('https://api.github.com/repos/miltonarce/helperbot/issues') 
